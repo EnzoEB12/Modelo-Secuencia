@@ -50,7 +50,7 @@
             .fit(xs, ys, {epochs: 300,})
 
             
-            .then((history) => {
+            .then(() => {
                 //console.log(history)
                 //Le pasamos los Valores de X
                 const TensorX = tf.tensor([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
@@ -106,7 +106,7 @@
 //=================================================================================
         //Perdidas
 
-/* const model = tf.sequential({
+const model = tf.sequential({
             layers: [
                 tf.layers.dense({
                     inputShape: 1,
@@ -136,9 +136,9 @@
         // Train for 5 epochs with batch size of 32.
          model.fit(xs, ys, {
             epochs: 10,
-            batchSize: 10,
+            batchSize: 32,
             callbacks: tfvis.show.fitCallbacks(surface, ['loss', 'acc']),
-        }); */
+        });
     </script>
 </body>
 
