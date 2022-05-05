@@ -42,9 +42,9 @@
         });
 
         // Valores de X
-        const xs = tf.tensor([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]);
+        const xs = tf.tensor([0, 1, 2, 3, 4, 5, 6, 7]);
         // Valores de Y
-        const ys = tf.tensor([-12, -10, -8, -6, -4, -2, 0, 2, 4, 6, 8]);
+        const ys = tf.tensor([-2, 0, 2, 4, 6, 8, 10, 12]);
         // Entrenamos el modelo
         modelo
             .fit(xs, ys, {epochs: 300,})
